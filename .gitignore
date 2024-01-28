@@ -1,0 +1,35 @@
+# Ignore all files by default, but scan all directories
+*
+!*/
+!.gitignore
+
+
+# track this file
+
+# C/C++ source files
+!*.c
+!*.cpp
+!*.h
+!*.fx
+
+# Script files
+!*.lua
+
+# Text files
+!*.txt
+!*.md
+
+# Premake
+!ThirdParty/Premake/LICENSE.txt
+!ThirdParty/Premake/premake5.exe
+
+# Text files
+!*.txt
+!*.md
+
+# Library
+!*.lib
+!*.dll
+
+# bat
+!*.bat
