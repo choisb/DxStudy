@@ -57,3 +57,22 @@ project "Chapter01_VectorAlgebra"
 		"%{prj.name}/Source"
 	}
 
+project "Chapter02_MatrixAlgebra"
+	location "%{prj.name}"
+	kind "ConsoleApp"
+	language "C++"
+
+	targetdir ("Binaries/" .. outputdir .. "/%{prj.name}")
+	objdir ("Intermediate/" .. outputdir .. "/%{prj.name}")
+
+	files
+	{
+		"%{prj.name}/Source/**.h",
+		"%{prj.name}/Source/**.cpp",
+	}
+
+	includedirs
+	{
+		"%{prj.name}/Source"
+	}
+
